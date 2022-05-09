@@ -1,0 +1,123 @@
+body {
+    background-color: #141519;
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Overpass', sans-serif;
+    font-size: 15px;
+    user-select: none;
+}
+
+.card {
+    background-color: #1F2630;
+    border-radius: 25px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 25%;
+    height: 50%;
+    padding: 25px;
+}
+
+.header {
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+    font-size: x-large;
+    margin-bottom: 10px;
+}
+
+.paragraph {
+    color: hsl(216, 12%, 54%);
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+.star,
+.starIcon {
+    border-radius: 50%;
+    padding: 12px;
+    padding: auto;
+    background-color: #252E37;
+    color: hsl(216, 12%, 54%);
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.starIcon {
+    cursor: default;
+}
+
+.star:hover {
+    background-color: hsl(217, 12%, 63%);
+    color: hsl(0, 0%, 100%);
+}
+
+.rating {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.submit-btn {
+    width: 100%;
+    background-color: hsl(25, 97%, 53%);
+    color: hsl(0, 0%, 100%);
+    border: none;
+    border-radius: 25px;
+    padding: 15px 0;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(25, 97%, 53%);
+}
+
+.rating-final {
+    color: hsl(25, 97%, 53%);
+    background-color: #252E37;
+    border-radius: 25px;
+    padding: 7px 15px;
+    text-align: center;
+}
+
+#finalPage {
+    display: none;
+}
+
+
+.selected,
+.selected:hover {
+    background-color: hsl(25, 97%, 53%);
+    color: hsl(0, 0%, 100%);
+}
+
+
+@media  screen and (max-width: 533px) {
+    .card{
+        width:80%;
+    }
+}
+
+@media  screen and (min-width: 533px) and (max-width: 720px) {
+    .card{
+        width:60%;
+    }
+}
+
+@media screen and (min-width: 720px) and (max-width: 1076px) { 
+    .card{
+        width:40%;
+    }
+}
